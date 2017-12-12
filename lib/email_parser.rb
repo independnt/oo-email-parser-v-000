@@ -14,8 +14,8 @@ class EmailParser
 
   def parse(emails)
     address = emails.split(/[\s,]/)
+
     
-    end
   end
 
 
