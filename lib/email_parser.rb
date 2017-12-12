@@ -16,13 +16,7 @@ class EmailParser
   end
 
   def parse
-    @email.collect do |e|
-      if e.include?(",")
-        e.split(",")
-      elsif e.include?(" ")
-        e.split(" ")
-      end
-    end
+    @emails.split(/[\s,]+/)
   end
 
 
