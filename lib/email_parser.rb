@@ -16,7 +16,10 @@ class EmailParser
   end
 
   def parse
-    @email.split(/[\s,]+/)
+    parsed = @email.split(/[\s,]+/)
+    parsed.map do |e|
+      if e != nil
+      end
   end
 
 
