@@ -18,10 +18,8 @@ class EmailParser
   def parse
     parsed = @email.split(/[\s,]+/)
     parsed.map do |e|
-      if e == e
-        e
+       e unless.include?(e)
       end
-    end
   end
 
 
