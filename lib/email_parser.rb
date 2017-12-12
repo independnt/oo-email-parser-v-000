@@ -16,12 +16,8 @@ class EmailParser
   end
 
   def parse
-    Arr = []
     parsed = @email.split(/[\s,]+/)
-    parsed.each do |e|
-       Arr << e unless Arr.include?(e)
-      end
-      Arr
+    parsed.uniq
   end
 
 
