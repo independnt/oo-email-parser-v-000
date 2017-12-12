@@ -19,9 +19,9 @@ class EmailParser
     Arr = []
     parsed = @email.split(/[\s,]+/)
     parsed.each do |e|
-       Arra << e unless Arra.include?(e)
+       Arr << e unless Arr.include?(e)
       end
-      Arra
+      Arr
   end
 
 
