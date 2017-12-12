@@ -20,6 +20,7 @@ class EmailParser
     parsed.map do |e|
       if e != nil
       end
+    end
   end
 
 
