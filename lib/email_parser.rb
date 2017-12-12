@@ -22,6 +22,7 @@ class EmailParser
       elsif e.include?(" ")
         e.split(" ")
       end
+    end
   end
 
 
