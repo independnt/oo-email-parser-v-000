@@ -11,7 +11,7 @@ class EmailParser
 
   def parse(emails)
     emails.map do |e|
-      e.split(/[/s,]/)
+      e.split(/[\s,]/)
       binding.pry
     end
   end
