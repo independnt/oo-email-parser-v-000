@@ -16,7 +16,7 @@ class EmailParser
   end
 
   def parse
-    @email.map do |e|
+    @email.collect do |e|
       if e.include?(",")
         e.split(",")
       elsif e.include?(" ")
