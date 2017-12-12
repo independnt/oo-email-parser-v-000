@@ -12,7 +12,7 @@ class EmailParser
   attr_accessor :email
 
   def parse
-    @email.split(/[\s,]/)
+    self.split(/[\s,]/)
   end
 
 
