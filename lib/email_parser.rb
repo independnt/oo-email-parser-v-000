@@ -10,11 +10,12 @@ require "pry"
 
 class EmailParser
 
+  attr_accessor :email
+
   def parse(emails)
-    emails.map do |e|
-      e.split(/[\s,]/)
+    address = emails.split(/[\s,]/)
+    
     end
-    binding.pry
   end
 
 
