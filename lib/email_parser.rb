@@ -17,9 +17,12 @@ class EmailParser
 
   def parse
     parsed = @email.split(/[\s,]+/)
+    Arr = []
     parsed.map do |e|
-       e unless parsed.include?(e)
+       Arr << e unless Arr.include?(e)
       end
+      Arr
+
   end
 
 
